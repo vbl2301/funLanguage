@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="339.0" prefWidth="592.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="org.fatec.funlangague.controller.GameController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="64.0" prefWidth="600.0" spacing="10.0">
+                     <children>
+                        <Label text="Lingua do jogo:" />
+                        <TextField />
+                        <Label text="Dificuldade:" />
+                        <TextField prefHeight="25.0" prefWidth="95.0" />
+                        <Label text="Acertos:" />
+                        <TextField prefHeight="25.0" prefWidth="49.0" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <ImageView fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label text="Entre com a palavra correspondente a imagem:" />
+                  <TextField />
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </opaqueInsets>
+            </VBox>
+         </center>
+         <bottom>
+            <FlowPane alignment="CENTER_RIGHT" hgap="5.0" prefHeight="39.0" prefWidth="592.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" text="Validar" />
+                  <Button mnemonicParsing="false" text="Desistir" />
+               </children>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </FlowPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
