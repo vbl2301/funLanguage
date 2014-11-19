@@ -7,8 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="129.0" prefWidth="303.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="org.fatec.funlangague.controller.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="129.0" prefWidth="303.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.fatec.funlangague.controller.LoginController">
    <children>
       <BorderPane prefHeight="190.0" prefWidth="371.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <center>
@@ -18,17 +17,17 @@
                </padding>
                <children>
                   <Label text="Usuario" />
-                  <TextField />
+                  <TextField fx:id="txfUsuario" />
                   <Label text="Senha" />
-                  <TextField />
+                  <PasswordField fx:id="pwfSenha" />
                </children>
             </VBox>
          </center>
          <bottom>
             <FlowPane alignment="CENTER_RIGHT" hgap="5.0" prefHeight="27.0" prefWidth="320.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" text="OK" />
-                  <Button mnemonicParsing="false" text="Cancelar" />
+                  <Button fx:id="btnLogar" mnemonicParsing="false" onAction="#handleBtnLogar" text="Logar" />
+                  <Button fx:id="btnCancelar" mnemonicParsing="false" text="Cancelar" />
                </children>
                <opaqueInsets>
                   <Insets />

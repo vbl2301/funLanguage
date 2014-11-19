@@ -1,19 +1,8 @@
 package org.fatec.funlangague.model.db.dao;
 
-import java.util.List;
-import org.fatec.funlangague.model.User;
+import org.fatec.funlangague.model.user.User;
 
-public interface UserDao {
-    
-    boolean add(User user);
-    
-    List<User> list();
-    
-    User find(long id);
-    
-    int remove(long id);
-    
-    int update(User user);
+public interface UserDao extends GenericDao<User>{
     
     User findByLogin(String username);
     

@@ -4,18 +4,19 @@
     <!--provedor/implementacaodo JPA -->
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
     <!--entidades mapaeadas-->
-    <class>org.fatec.funlangague.model.GameHistory</class>
-    <class>org.fatec.funlangague.model.Language</class>
-    <class>org.fatec.funlangague.model.Level</class>
-    <class>org.fatec.funlangague.model.Picture</class>
-    <class>org.fatec.funlangague.model.User</class>
-    <class>org.fatec.funlangague.model.Word</class> 
+    <class>org.fatec.funlangague.model.gameHistory.GameHistory</class>
+    <class>org.fatec.funlangague.model.language.Language</class>
+    <class>org.fatec.funlangague.model.level.Level</class>
+    <class>org.fatec.funlangague.model.picture.Picture</class>
+    <class>org.fatec.funlangague.model.user.User</class>
+    <class>org.fatec.funlangague.model.word.Word</class>
+    <class>org.fatec.funlangague.model.AbstractEntity</class>
     <properties>
       <!--dados da conexao, são independentes do JPA-->
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/funlanguage?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.jdbc.password" value="123"/>
       <!--propriedades do hibernate-->
       <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
       <property name="hibernate.show_sql" value="true"/>
