@@ -1,23 +1,26 @@
 package org.fatec.funlangague.model.db.dao;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 import org.fatec.funlangague.model.user.User;
 
-public class UserDaoJPA extends GenericDaoJPA<User> implements UserDao{
-    
+public class UserDaoJPA extends GenericDaoJPA<User> implements UserDao {
+
     private String sLogin = "SELECT u FROM User u WHERE u.username = ?";
-    
-    public UserDaoJPA(){
+
+    public UserDaoJPA() {
     }
 
     @Override
-    public User findByLogin(String login) {
+    public User findByLogin(String login) throws NoResultException{
+
         EntityManager em = factory.createEntityManager();
-        TypedQuery<User> query = em.createQuery(sLogin,User.class);
-        
+        TypedQuery<User> query = em.createQuery(sLogin, User.class);
+
         query.setParameter(1, login);
-        return query.getSingleResult();    
+        return query.getSingleResult();
+
     }
-    
+
 }
