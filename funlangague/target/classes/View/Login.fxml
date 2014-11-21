@@ -27,7 +27,9 @@
             <FlowPane alignment="CENTER_RIGHT" hgap="5.0" prefHeight="27.0" prefWidth="320.0" BorderPane.alignment="CENTER">
                <children>
                   <Button fx:id="btnLogar" mnemonicParsing="false" onAction="#handleBtnLogar" text="Logar" />
-                  <Button fx:id="btnCancelar" mnemonicParsing="false" text="Cancelar" />
+                  <Button mnemonicParsing="false" text="Cadastrar-se" />
+                  <Button mnemonicParsing="false" text="Ranking" />
+                  <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#handleBtnCancelar" text="Cancelar" />
                </children>
                <opaqueInsets>
                   <Insets />

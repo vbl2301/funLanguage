@@ -57,7 +57,7 @@ public class LoginController implements Initializable {
     }
 
     @FXML
-    private void handleBtnLogar(ActionEvent actionEvent) throws IOException {
+    void handleBtnLogar(ActionEvent actionEvent) throws IOException {
         if (!pwfSenha.getText().trim().isEmpty() && !txfUsuario.getText().trim().isEmpty()) {
             try {
                 user = dao.findByLogin(txfUsuario.getText());
